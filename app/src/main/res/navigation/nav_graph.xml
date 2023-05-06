@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/login_fragment">
+
+    <fragment
+        android:id="@+id/login_fragment"
+        android:name="io.shonazarova.todos.login_fragment"
+        android:label="login_fragment" >
+        <action
+            android:id="@+id/action_login_fragment_to_todos_fragment"
+            app:destination="@id/todos_fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/todos_fragment"
+        android:name="io.shonazarova.todos.todos_fragment"
+        android:label="todos_fragment" />
+</navigation>
